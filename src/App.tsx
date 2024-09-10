@@ -1,12 +1,17 @@
-import "./App.css";
+// src/App.tsx
+import React from "react";
+import { AuthProvider } from "./context/AuthContext";
+import Login from "./components/Login";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <h1>Firebase、マジ神</h1>
+    <AuthProvider>
+      <div className="App">
+        <Login />
+        {/* 他のコンポーネント */}
       </div>
-    </>
+    </AuthProvider>
   );
-}
+};
+
 export default App;
