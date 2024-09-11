@@ -7,6 +7,9 @@ const App: React.FC = () => {
   return (
     <AuthProvider>
       <div className="App">
+        <div>
+          <h1>Hello, Firebase React App!</h1>
+        </div>
         <Login />
         {/* 他のコンポーネント */}
       </div>

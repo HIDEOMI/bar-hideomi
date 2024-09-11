@@ -1,18 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: "AIzaSyDl8eNBqvPnTRQaYzEZYcRl8_5k6JVF8vc",
+  authDomain: "bar-hideomi.firebaseapp.com",
+  projectId: "bar-hideomi",
+  storageBucket: "bar-hideomi.appspot.com",
+  messagingSenderId: "161818241152",
+  appId: "1:161818241152:web:558a5f9b68d4eec903de65"
 };
 
 const app = initializeApp(firebaseConfig);
-
-export const auth = getAuth(app);
-export const provider = new GoogleAuthProvider();
 export const db = getFirestore(app);
+export const auth = getAuth(app);
